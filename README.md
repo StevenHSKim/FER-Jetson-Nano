@@ -33,7 +33,7 @@ FER-Jetson-Nano
 ├── weights/                           # 추론에 사용될 학습된 모델 가중치를 저장
 │
 ├── inference.py                       # 추론 수행을 위한 메인 스크립트
-└── requirements.yml                   # 가상 환경 설정 파일
+└── environment.yml                    # 가상 환경 설정 파일
 ```
 
 <br>
