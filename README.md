@@ -20,8 +20,8 @@ FER-Jetson-Nano
 │
 ├── training                           # 경량 FER 모델을 학습시키는 스크립트를 포함
 │   ├── KD_training.py                 # Knowledge Distillation(KD)를 이용한 학습
-│   ├── PR_KD_training.py              # Student 모델에 Pruning(PR)을 결합한 학습
-│   └── PTQ_KD_training.py             # Student 모델에 Post-Training Quantization(PTQ)을 결합한 학습
+│   ├── PR_KD_training.py              # Student 모델에 Pruning(PR)을 적용한 학습
+│   └── PTQ_KD_training.py             # Student 모델에 Post-Training Quantization(PTQ)을 적용한 학습
 │
 ├── visualize                          # 시각화를 생성하는 스크립트를 포함
 │   └── visualization.py               # results의 시각화 이미지 생성
