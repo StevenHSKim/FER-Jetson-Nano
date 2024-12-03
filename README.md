@@ -7,7 +7,7 @@ Facial Expression Recognition(FER)은 다양한 얼굴 표정을 자동으로 �
 
 <br>
 
-## 폴더 구조
+## Folder Structure
 ```bash
 FER-Jetson-Nano                        
 
@@ -50,12 +50,12 @@ Jetson-Nano (Linux) Python3 Setting:
 
 <br>
 
-## 데이터셋
+## Dataset
 학습에 사용한 48x48 사이즈로 전처리된 CK+ 데이터셋은 [여기](https://www.kaggle.com/datasets/shuvoalok/ck-dataset)에서 다운로드 받을 수 있습니다.
 
 <br>
 
-## Inference 스크립트
+## Inference Scripts
 Knowledge Distillation(baseline) model Inference commands
 ```bash
 python "./inference.py" --model kd       # Student
@@ -87,7 +87,7 @@ python "./inference.py" --model ptq_kd --quantize-bits 8 --evaluate
 
 <br>
 
-## 결과
+## Results
 ![total_comparison](https://github.com/user-attachments/assets/e3c96b45-5de3-40f5-8417-d50ea8cf4cc9)
 
 <br>
