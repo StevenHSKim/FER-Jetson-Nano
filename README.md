@@ -1,5 +1,9 @@
 ## FER-Jetson-Nano
-젯슨 나노 환경에서 동작하는 Facial Expression Recognition(FER) 프로젝트
+Facial Expression Recognition(FER)은 다양한 얼굴 표정을 자동으로 인식하고 분류하는 기술로, 인간-컴퓨터 상호작용(Human-Computer Interaction) 및 감정 분석 등의 응용 분야에서 중요한 역할을 합니다. 
+
+본 프로젝트에서는 NVIDIA Jetson Nano 임베디드 시스템 환경에서 FER 모델을 구현하고 다양한 경량화 기법을 적용하여 Jetson Nano에서의 성능을 비교 및 분석하였습니다. 
+
+해당 테스크는 Anger, Disgust, Fear, Happiness, Sadness, Surprise, Contempt로 구성된 총 7개의 감정 클래스로 분류하는 것을 목표합니다.
 
 <br>
 
@@ -36,7 +40,7 @@ FER-Jetson-Nano
 
 ## Requirements
 ```bash
-conda env create --file environment.yaml
+conda env create --file environment.yml
 ```
 
 Jetson-Nano (Linux) Python3 Setting:
