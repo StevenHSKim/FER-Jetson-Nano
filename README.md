@@ -58,15 +58,15 @@ Jetson-Nano (Linux) Python3 Setting:
 ## Inference Scripts
 Knowledge Distillation(baseline) model Inference commands
 ```bash
-python "./inference.py" --model kd       # Student
-python "./inference.py" --model teacher  # Teacher
+python3 "./inference.py" --model kd       # Student
+python3 "./inference.py" --model teacher  # Teacher
 ```
 
 <br>
 
 Prunned Student model Inference commands
 ```bash
-python "./inference.py" --model pr_kd --pr-level medium
+python3 "./inference.py" --model pr_kd --pr-level medium
 
 # choice = ['low', 'medium', 'high']
 ```
@@ -75,14 +75,14 @@ python "./inference.py" --model pr_kd --pr-level medium
 
 Quantized Student model Inference commands
 ```bash
-python "./inference.py" --model ptq_kd --quantize-bits 8
+python3 "./inference.py" --model ptq_kd --quantize-bits 8
 
 # choice = [32, 16, 6, 4]
 ```
 
 If you want to save results csv file, add `--evaluate` at the end
 ```bash
-python "./inference.py" --model ptq_kd --quantize-bits 8 --evaluate
+python3 "./inference.py" --model ptq_kd --quantize-bits 8 --evaluate
 ```
 
 <br>
