@@ -1,5 +1,7 @@
-# FER-Jetson-Nano
+## FER-Jetson-Nano
+젯슨 나노 임베디드 환경에서 동작하는 Facial Expression Recognition(FER) 프로젝트
 
+<br>
 
 ## 폴더 구조
 ```bash
@@ -28,4 +30,56 @@ FER-Jetson-Nano
 
 ```
 
+<br>
 
+## Requirements
+```bash
+conda env create --file environment.yaml
+```
+
+Jetson-Nano (Linux) Python3 Setting:
+- python=3.6.9
+- torch=0.8.1
+- ...
+
+<br>
+
+## 데이터셋
+CK+ 데이터셋은 [여기](https://www.kaggle.com/datasets/shuvoalok/ck-dataset)에서 다운로드 받을 수 있습니다.
+
+<br>
+
+## Inference 스크립트
+Knowledge Distillation(baseline) model Inference commands
+```bash
+python "./inference.py" --model kd       # Student
+python "./inference.py" --model teacher  # Teacher
+```
+
+<br>
+
+Prunned Student model Inference commands
+```bash
+python "./inference.py" --model pr_kd --pr-level medium
+
+# option = ['low', 'medium', 'high']
+```
+
+<br>
+
+Quantized Student model Inference commands
+```bash
+python "./inference.py" --model ptq_kd --quantize-bits 8
+
+# option = [32, 16, 6, 4]
+```
+
+If you want to save results csv file, add `--evaluate` at the end
+```bash
+python "./inference.py" --model ptq_kd --quantize-bits 8 --evaluate
+```
+
+<br>
+
+## 결과
+![total_comparison](https://github.com/user-attachments/assets/e3c96b45-5de3-40f5-8417-d50ea8cf4cc9)
