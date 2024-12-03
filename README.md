@@ -45,7 +45,7 @@ Jetson-Nano (Linux) Python3 Setting:
 <br>
 
 ## 데이터셋
-CK+ 데이터셋은 [여기](https://www.kaggle.com/datasets/shuvoalok/ck-dataset)에서 다운로드 받을 수 있습니다.
+학습에 사용한 48x48 사이즈로 전처리된 CK+ 데이터셋은 [여기](https://www.kaggle.com/datasets/shuvoalok/ck-dataset)에서 다운로드 받을 수 있습니다.
 
 <br>
 
