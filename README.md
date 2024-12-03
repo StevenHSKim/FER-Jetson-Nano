@@ -85,3 +85,8 @@ python "./inference.py" --model ptq_kd --quantize-bits 8 --evaluate
 
 ## 결과
 ![total_comparison](https://github.com/user-attachments/assets/e3c96b45-5de3-40f5-8417-d50ea8cf4cc9)
+
+<br>
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
