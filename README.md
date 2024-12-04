@@ -88,7 +88,8 @@ python3 "./inference.py" --model ptq_kd --quantize-bits 8 --evaluate
 <br>
 
 ## Results
-![total_comparison](https://github.com/user-attachments/assets/e3c96b45-5de3-40f5-8417-d50ea8cf4cc9)
+![image](https://github.com/user-attachments/assets/44951f33-26ec-4604-99c3-e043c7612d8f)
+
 
 <br>
 
