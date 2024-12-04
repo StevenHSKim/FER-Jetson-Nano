@@ -77,7 +77,7 @@ Quantized Student model Inference commands
 ```bash
 python3 "./inference.py" --model ptq_kd --quantize-bits 8
 
-# choice = [32, 16, 6, 4]
+# choice = [32, 16, 8, 4]
 ```
 
 If you want to save results csv file, add `--evaluate` at the end
