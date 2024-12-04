@@ -56,7 +56,7 @@ Jetson-Nano (Linux) Python3 Setting:
 <br>
 
 ## Inference Scripts
-Knowledge Distillation(baseline) model Inference commands
+Knowledge Distillation model Inference commands
 ```bash
 python3 "./inference.py" --model kd       # Student
 python3 "./inference.py" --model teacher  # Teacher
