@@ -3,7 +3,6 @@ import glob
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import numpy as np
 
 def find_model_files(results_dir, model_prefix):
     """Find all CSV files for a specific model type in the results directory"""
