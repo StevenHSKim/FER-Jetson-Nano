@@ -1,4 +1,9 @@
 ## FER-Jetson-Nano
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/1a24c2d4-1969-4818-8fc1-49a10c95769c" alt="fer-jetson-nano-demo">
+</div>
+
+
 Facial Expression Recognition (FER) is a technology that automatically detects and classifies various facial expressions. It plays a crucial role in applications such as Human-Computer Interaction and emotion analysis.
 
 In this project, we implemented an FER model on the NVIDIA Jetson Nano embedded system and applied various optimization techniques to compare and analyze performance on the Jetson Nano.
