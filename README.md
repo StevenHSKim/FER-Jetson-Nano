@@ -64,15 +64,15 @@ The CK+ dataset preprocessed to a size of 48x48 for training can be downloaded [
 ## Inference Scripts
 Knowledge Distillation model Inference commands
 ```bash
-python3 "./inference.py" --model kd       # Student
-python3 "./inference.py" --model teacher  # Teacher
+python3 "inference.py" --model kd       # Student
+python3 "inference.py" --model teacher  # Teacher
 ```
 
 <br>
 
 Prunned Student model Inference commands
 ```bash
-python3 "./inference.py" --model pr_kd --pr-level medium
+python3 "inference.py" --model pr_kd --pr-level medium
 
 # choice = ['low', 'medium', 'high']
 ```
@@ -81,14 +81,14 @@ python3 "./inference.py" --model pr_kd --pr-level medium
 
 Quantized Student model Inference commands
 ```bash
-python3 "./inference.py" --model ptq_kd --quantize-bits 8
+python3 "inference.py" --model ptq_kd --quantize-bits 8
 
 # choice = [32, 16, 8, 4]
 ```
 
 If you want to save results csv file, add `--evaluate` at the end
 ```bash
-python3 "./inference.py" --model ptq_kd --quantize-bits 8 --evaluate
+python3 "inference.py" --model ptq_kd --quantize-bits 8 --evaluate
 ```
 
 <br>
